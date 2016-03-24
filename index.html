@@ -7,24 +7,41 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<nav>
-	         <ul>
-	             <li><a href="index.html">Home</a></li>
-	             <li><a href="Gallery/index.html">Gallery</a></li>
-	             <li><a href="Contact/index.html">Contact</a></li>
-	         </ul>
-     	</nav>
+		<div class="main-wrapper">
+	        <header class="header">
+				<nav class="nav">
+					<ul>
+						<li class="nav-item"><a href="index.html">Home</a></li>
+						<li class="nav-item"><a href="gallery/index.html">Gallery</a></li>
+						<li class="nav-item"><a href="contact/index.html">Contact</a></li>
+					</ul>
+		     	</nav>
+		    </header>
 
-     	<section>
-     	   <img src="Phantom_Bunny.png" />
-	       <img src="SmallerReaper.jpg" />
-	       <h1 style="color:blue">Hello World!</h1>
-	       <h2>This a my (Alisa Prusa) portfolio website</h2>
-	    </section>
+	     	<div class="flex column">
+		     	<section>
+		     		<div class="flex column">
+		     			<img src="img/Phantom_Bunny.png" class="logo"/>
+		     			<div class="img-wrapper">
+			     			<img src="img/SmallerReaper.jpg" class="main-img circle"/>
+			     		</div>
+				       
+			        </div>
+			        <div class="titles flex column">
+				        <h1 class="main title">Hello World!</h1>
+				        <h2 class="sub title">This is my (Alisa Prusa) portfolio website</h2>
+			        </div>
+			    </section>
+			</div>
+		</div>
 
-     	 <footer>
-	       <h3>About</h3>
-	       <a href="Resume_AlisaCPrusa.pdf" download="Alisa Prusa's Resume">Download My Resume</a>
-	   </footer>
+	     	<footer class="footer">
+		        <div class="flex">
+		            <div class="line"></div> 
+		              <h3 class="footer-sub title">About</h3>
+		            <div class="line"></div>
+		        </div>
+		        <a href="files/Resume_AlisaCPrusa.pdf" download="Alisa Prusa's Resume" class="button">Download: Current Resume</a>
+		   </footer>
 	</body>
 </html>
